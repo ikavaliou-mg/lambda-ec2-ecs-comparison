@@ -1,0 +1,19 @@
+{
+    "metrics": {
+        "namespace": "cost-comparison-k6",
+        "metrics_collected": {
+            "statsd": {
+                "service_address": ":8125",
+                "metrics_collection_interval": 1,
+                "metrics_aggregation_interval": 0
+            },
+            "mem": {
+                "measurement": [
+                    "mem_used_percent"
+                ],
+                "metrics_collection_interval": 1,
+                "metrics_aggregation_interval": 0
+            }
+        }
+    }
+}
