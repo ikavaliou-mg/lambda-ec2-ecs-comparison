@@ -10,7 +10,19 @@ class SharedInfraStack(Stack):
         vpc_link: apigwv2.VpcLink
 
         Tags.of(self).add("stack_name", construct_id)
-        self.vpc = aws_ec2.Vpc(self, f"{construct_id}-Vpc", max_azs=2)
+        self.vpc = aws_ec2.Vpc(
+            self,
+            f"{construct_id}-Vpc",
+            max_azs=2,
+            gateway_endpoints={
+                "S3": aws_ec2.GatewayVpcEndpointOptions(
+                    service=aws_ec2.GatewayVpcEndpointAwsService.S3
+                ),
+                "DYNAMODB": aws_ec2.GatewayVpcEndpointOptions(
+                    service=aws_ec2.GatewayVpcEndpointAwsService.DYNAMODB
+                ),
+            },
+        )
 
         self.vpc_link = apigwv2.VpcLink(
             self,
