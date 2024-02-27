@@ -20,9 +20,9 @@
             "type": "metric",
             "properties": {
                 "metrics": [
-                    [ "cost-comparison-k6", "k6_http_req_duration", "execution_id", "106204", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "timing", "host", "SERVER_HOSTNAME", "tls_version", "tls1.2", "expected_response", "true", "status", "200", { "label": "lambda", "region": "ap-southeast-2", "id": "m1" } ],
-                    [ "cost-comparison-k6", "k6_http_req_duration", "execution_id", "106204", "method", "GET", "scenario", "ecs", "proto", "HTTP/2.0", "name", "ECS_API_URL", "metric_type", "timing", "host", "SERVER_HOSTNAME", "tls_version", "tls1.2", "expected_response", "true", "status", "200", { "label": "ecs", "region": "ap-southeast-2", "id": "m2" } ],
-                    [ "cost-comparison-k6", "k6_http_req_duration", "execution_id", "106204", "method", "GET", "scenario", "ec2", "proto", "HTTP/2.0", "name", "EC2_API_URL", "metric_type", "timing", "host", "SERVER_HOSTNAME", "tls_version", "tls1.2", "expected_response", "true", "status", "200", { "label": "ec2", "region": "ap-southeast-2", "id": "m3" } ]
+                    [ "cost-comparison-k6", "k6_http_req_duration", "execution_id", "106204", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "timing", "host", "SERVER_HOSTNAME", "tls_version", "tls1.3", "expected_response", "true", "status", "200", { "label": "lambda", "region": "ap-southeast-2", "id": "m1" } ],
+                    [ "cost-comparison-k6", "k6_http_req_duration", "execution_id", "106204", "method", "GET", "scenario", "ecs", "proto", "HTTP/2.0", "name", "ECS_API_URL", "metric_type", "timing", "host", "SERVER_HOSTNAME", "tls_version", "tls1.3", "expected_response", "true", "status", "200", { "label": "ecs", "region": "ap-southeast-2", "id": "m2" } ],
+                    [ "cost-comparison-k6", "k6_http_req_duration", "execution_id", "106204", "method", "GET", "scenario", "ec2", "proto", "HTTP/2.0", "name", "EC2_API_URL", "metric_type", "timing", "host", "SERVER_HOSTNAME", "tls_version", "tls1.3", "expected_response", "true", "status", "200", { "label": "ec2", "region": "ap-southeast-2", "id": "m3" } ]
                 ],
                 "sparkline": false,
                 "view": "singleValue",
@@ -46,7 +46,7 @@
             "type": "metric",
             "properties": {
                 "metrics": [
-                    [ "cost-comparison-k6", "k6_http_reqs", "execution_id", "106204", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "counter", "host", "SERVER_HOSTNAME", "tls_version", "tls1.2", "expected_response", "true", "status", "200", { "label": "lambda", "region": "ap-southeast-2" } ],
+                    [ "cost-comparison-k6", "k6_http_reqs", "execution_id", "106204", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "counter", "host", "SERVER_HOSTNAME", "tls_version", "tls1.3", "expected_response", "true", "status", "200", { "label": "lambda", "region": "ap-southeast-2" } ],
                     [ "...", "ecs", ".", ".", ".", "ECS_API_URL", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", { "label": "ecs", "region": "ap-southeast-2" } ],
                     [ "...", "ec2", ".", ".", ".", "EC2_API_URL", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", { "label": "ec2", "region": "ap-southeast-2" } ]
                 ],
@@ -72,7 +72,7 @@
             "type": "metric",
             "properties": {
                 "metrics": [
-                    [ "cost-comparison-k6", "k6_http_req_duration", "execution_id", "106204", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "timing", "host", "SERVER_HOSTNAME", "tls_version", "tls1.2", "expected_response", "true", "status", "200", { "label": "lambda", "region": "ap-southeast-2" } ],
+                    [ "cost-comparison-k6", "k6_http_req_duration", "execution_id", "106204", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "timing", "host", "SERVER_HOSTNAME", "tls_version", "tls1.3", "expected_response", "true", "status", "200", { "label": "lambda", "region": "ap-southeast-2" } ],
                     [ "...", "ecs", ".", ".", ".", "ECS_API_URL", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", { "label": "ecs", "region": "ap-southeast-2" } ],
                     [ "...", "ec2", ".", ".", ".", "EC2_API_URL", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", { "label": "ec2", "region": "ap-southeast-2" } ]
                 ],
@@ -200,7 +200,7 @@
             "type": "metric",
             "properties": {
                 "metrics": [
-                    [ "cost-comparison-k6", "k6_http_reqs", "execution_id", "852985", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "counter", "host", "SERVER_HOSTNAME", "error_code", "1502", "tls_version", "tls1.2", "expected_response", "false", "status", "502", { "label": "lambda" } ],
+                    [ "cost-comparison-k6", "k6_http_reqs", "execution_id", "852985", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "counter", "host", "SERVER_HOSTNAME", "error_code", "1502", "tls_version", "tls1.3", "expected_response", "false", "status", "502", { "label": "lambda" } ],
                     [ "...", "ecs", ".", ".", ".", "ECS_API_URL", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", { "label": "ecs" } ],
                     [ "...", "ec2", ".", ".", ".", "EC2_API_URL", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", { "label": "ec2" } ]
                 ],
@@ -226,7 +226,7 @@
             "type": "metric",
             "properties": {
                 "metrics": [
-                    [ "cost-comparison-k6", "k6_http_reqs", "execution_id", "852985", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "counter", "host", "SERVER_HOSTNAME", "error_code", "1500", "tls_version", "tls1.2", "expected_response", "false", "status", "500", { "label": "lambda", "region": "ap-southeast-2" } ],
+                    [ "cost-comparison-k6", "k6_http_reqs", "execution_id", "852985", "method", "GET", "scenario", "lambda", "proto", "HTTP/2.0", "name", "LAMBDA_API_URL", "metric_type", "counter", "host", "SERVER_HOSTNAME", "error_code", "1500", "tls_version", "tls1.3", "expected_response", "false", "status", "500", { "label": "lambda", "region": "ap-southeast-2" } ],
                     [ "...", "ecs", ".", ".", ".", "ECS_API_URL", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", { "label": "ecs", "region": "ap-southeast-2" } ],
                     [ "...", "ec2", ".", ".", ".", "EC2_API_URL", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", { "label": "ec2", "region": "ap-southeast-2" } ]
                 ],
